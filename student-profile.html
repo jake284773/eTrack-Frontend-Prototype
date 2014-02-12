@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Profile - eTrack</title>
+
+    <!-- Normalize.css -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Application styling -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="img/logo.png" alt="eTrack logo">
+            <a href="#">eTrack</a>
+        </h1>
+
+        <nav>
+            <button id="navtoggle" type="button">Menu</button>
+
+            <ul class="left">
+                <li><a href="student-index.html">Your Status</a></li>
+                <li><a href="#">Course Info</a></li>
+                <li><a href="student-units.html">Units</a></li>
+                <li><a href="#">Assignments</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+
+            <ul class="right">
+                <li class="active"><a href="student-profile.html">Richard Evans</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="student-home">
+        <h1>Your profile</h1>
+
+        <form method="post">
+            <section id="personal-details">
+                <h2>Personal details</h2>
+
+                <label for="fullname">Full name:</label>
+                <input type="text" disabled name="fullname">
+
+                <label for="fullname">Student ID:</label>
+                <input type="text" disabled name="fullname">
+
+                <label for="fullname">Email address:</label>
+                <input type="email" disabled name="email">
+            </section>
+
+            <section id="user-password">
+                <h2>Change password</h2>
+
+                <label for="current_pw">Current password:</label>
+                <input type="password" name="current_pw">
+
+                <label for="new_pw1">New password:</label>
+                <input type="password" name="new_pw1">
+
+                <label for="new_pw2">Repeat new password:</label>
+                <input type="password" name="new_pw2">
+
+                <button type="submit">Update password</button>
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        <p>Designed and built by Jake Moreman.</p>
+        <p>&copy; Copyright 2014 &middot; City College Plymouth</p>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
