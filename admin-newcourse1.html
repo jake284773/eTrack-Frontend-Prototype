@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Your Status - eTrack</title>
+    <title>Create a new course - eTrack</title>
 
     <!-- Normalize.css -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -38,9 +38,9 @@
     <main id="addcourse">
         <section id="progress-block">
             <ol class="progress-track" data-progress-track-steps="4">
-                <li class="progress-track-done">Create course</li>
-                <li class="progress-track-done">Add groups</li>
-                <li class="progress-track-inprogress">Add units</li>
+                <li class="progress-track-inprogress">Create course</li>
+                <li class="progress-track-todo">Add groups</li>
+                <li class="progress-track-todo">Add units</li>
                 <li class="progress-track-todo">Confirmation</li>
             </ol>
         </section>
@@ -49,6 +49,14 @@
             <h1>Create a new course</h1>
 
             <form method="post">
+                <div class="field">
+                    <label for="faculty">Faculty</label>
+                    <select name="faculty">
+                        <option value="invalid">Please select</option>
+                        <option value="ccdi">Creative Cultural and Digital Industries</option>
+                        <option value="emr">Engineering, Marines and Renewables</option>
+                    </select>
+                </div>
                 <div class="field">
                     <label for="code">Course Code</label>
                     <input type="text" name="code">
@@ -60,16 +68,30 @@
                 </div>
 
                 <div class="field">
+                    <label for="course-organiser">Course Organiser</label>
+                    <select name="course-organiser">
+                        <option value="invalid">Please select</option>
+                        <option value="jsmith">John Smith</option>
+                        <option value="mshipton">Mark Shipton</option>
+                    </select>
+                </div>
+
+                <div class="field">
                     <label for="type">Course Type</label>
                     <select>
+                        <option value="invalid">Please select</option>
                         <option value="btec-first-extended-certificate">BTEC First Extended Certificate</option>
                         <option value="btec-national-certificate">BTEC National Certificate</option>
                         <option value="btec-national-subsidiary-diploma">BTEC National Subsidiary Diploma</option>
                         <option value="btec-national-90-credit-diploma">BTEC National 90 Credit Diploma</option>
                         <option value="btec-national-90-credit-diploma">BTEC National Diploma</option>
                         <option value="btec-national-extended-diploma">BTEC National Extended Diploma</option>
+                        <option value="ocr-technical-certificate">Cambridge Technical Certificate</option>
                     </select>
                 </div>
+
+
+                <button class="interface" type="submit">Save and continue</button>
             </form>
         </article>
     </main>
