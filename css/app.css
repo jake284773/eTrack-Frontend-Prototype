@@ -451,6 +451,10 @@ select:focus {
     outline: 3px solid #ffbf47;
 }
 
+input[disabled] {
+    cursor: not-allowed !important;
+}
+
 .system-warning,
 .auth-error {
     padding: 15px;
